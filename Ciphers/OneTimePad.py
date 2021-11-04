@@ -66,9 +66,7 @@ class OneTimePad(object):
         file = open(self.filePath, 'w')
         file.write(self.encryptedContent)
         file.close()
-        file = open('C:\\Users\DELL\\Desktop\\Initium\\ISS\\test2.txt', 'w')
-        file.write("".join(self.key))
-        file.close()
+
 
     def Decrypt(self, key):
         file = open(self.filePath, 'r')
@@ -91,11 +89,3 @@ class OneTimePad(object):
         file = open(self.filePath, 'w')
         file.write(self.decryptedContent)
         file.close()
-
-
-myfile = OneTimePad('C:\\Users\DELL\\Desktop\\Initium\\ISS\\test.txt')
-# myfile.Encrypt()
-#file = open('C:\\Users\DELL\\Desktop\\Initium\\ISS\\test2.txt', 'r')
-#key = file.read()
-# file.close()
-# myfile.Decrypt(key)
